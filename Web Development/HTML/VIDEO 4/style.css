@@ -1,0 +1,28 @@
+h1{
+    color: #000;
+}
+a:visited{
+    color: rgb(36, 190, 113);
+}
+a:hover{
+    color: aqua;
+}
+p::first-line{
+    color: purple;
+    font-size: larger;
+
+}
+p::first-letter{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-size: 81.25%;
+  }
+  
+  button {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
