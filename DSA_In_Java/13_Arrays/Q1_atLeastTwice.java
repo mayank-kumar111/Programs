@@ -17,6 +17,7 @@ public class Q1_atLeastTwice {
         }
         System.out.println("Your array is: " + Arrays.toString(nums));
         System.out.println(repartedTwice(nums));
+        sc.close();
     }
 
     public static boolean repartedTwice(int[] nums) {

@@ -1,0 +1,236 @@
+<!-- Make a simple form which take input as name, email id, passward, phone number. Using html, Css. and javascript in single page-->
+<!-- it should be stored data from the registation form-->
+<!-- Use MySql Database for stored data from user-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 15px;
+        }
+
+        .success {
+            color: green;
+            margin-bottom: 15px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-group input.error {
+            border-color: red;
+        }
+
+        .form-group input.success {
+            border-color: green;
+        }
+
+        .form-group .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .form-group .success-message {
+            color: green;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm" method="POST" action="submit.php">
+            <div class="form-group
+">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message hidden">Please enter a valid name.</span>
+                <span class="success-message hidden">Looks good!</span>
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message hidden">Please enter a valid email.</span>
+                <span class="success-message hidden">Looks good!</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message hidden">Password must be at least 6 characters long.</span>
+                <span class="success-message hidden">Looks good!</span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+                <span class="error-message hidden">Please enter a valid phone number.</span>
+                <span class="success-message hidden">Looks good!</span>
+            </div>
+            <input type="submit" value="Register">
+            <div id="formMessage" class="hidden"></div>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('registrationForm');
+            const formMessage = document.getElementById('formMessage');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Validate the form fields
+                let isValid = true;
+                const name = document.getElementById('name');
+                const email = document.getElementById('email');
+                const password = document.getElementById('password');
+                const phone = document.getElementById('phone');
+                const errorMessages = form.querySelectorAll('.error-message');
+                const successMessages = form.querySelectorAll('.success-message');
+                errorMessages.forEach(msg => msg.classList.add('hidden'));
+                successMessages.forEach(msg => msg.classList.add('hidden'));
+
+                if (name.value.trim() === '') {
+                    name.classList.add('error');
+                    name.nextElementSibling.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    name.classList.remove('error');
+                    name.classList.add('success');
+                    name.nextElementSibling.classList.remove('hidden');
+                }
+                if (email.value.trim() === '' || !validateEmail(email.value)) {
+                    email.classList.add('error');
+                    email.nextElementSibling.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    email.classList.remove('error');
+                    email.classList.add('success');
+                    email.nextElementSibling.classList.remove('hidden');
+                }
+                if (password.value.length < 6) {
+                    password.classList.add('error');
+                    password.nextElementSibling.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    password.classList.remove('error');
+                    password.classList.add('success');
+                    password.nextElementSibling.classList.remove('hidden');
+                }
+                if (phone.value.trim() === '' || !validatePhone(phone.value)) {
+                    phone.classList.add('error');
+                    phone.nextElementSibling.classList.remove('hidden');
+                    isValid = false;
+                } else {
+                    phone.classList.remove('error');
+                    phone.classList.add('success');
+                    phone.nextElementSibling.classList.remove('hidden');
+                }
+                if (isValid) {
+                    form.submit(); // Submit the form if all fields are valid
+                } else {
+                    formMessage.textContent = 'Please fix the errors above.';
+                    formMessage.classList.add('error');
+                    formMessage.classList.remove('hidden');
+                }
+            });
+
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(String(email).toLowerCase());
+            }
+            function validatePhone(phone) {
+                const re = /^[0-9]{10}$/;
+                return re.test(String(phone));
+            }
+        });
+    </script>
+</body>
+
+</html>

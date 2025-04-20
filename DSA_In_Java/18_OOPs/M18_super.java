@@ -2,8 +2,7 @@
 
 public class M18_super {
     public static void main(String[] args) {
-        Dog d = new Dog();
-        
+        Dog d = new Dog();        
     }
 
 }
@@ -19,5 +18,6 @@ class Dog extends Animal {
     Dog() {
         super.color = "black";
         System.out.println("dog is created");
+        System.out.println("color is: " + super.color);
     }
 }
