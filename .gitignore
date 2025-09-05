@@ -13,3 +13,9 @@
 *.opensdf
 *.vcxproj.user
 *.vscode
+*.metadata
+*.settings
+*.classpath
+*.project
+*.bin
+*.class
