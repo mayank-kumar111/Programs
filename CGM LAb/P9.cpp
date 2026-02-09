@@ -1,3 +1,5 @@
+// 2D Transformations: Translation, Scaling, Rotation for Line and Triangle
+
 #include <iostream>
 #include <graphics.h>
 #include <conio.h>
