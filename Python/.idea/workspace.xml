@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81e2a304-7a3e-4f30-84ba-18716ae94aa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/java/com/example/p4_rss_feed/RSSAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/java/com/example/p4_rss_feed/RSSItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/res/layout/row_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ML Lab/Insurance_Purchase.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ML Lab/P9_Logistic_Regression.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ML Lab/Social_Network_Ads.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/java/com/example/p4_rss_feed/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/java/com/example/p4_rss_feed/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MAD_Lab/P4_Rss_Feed/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML Lab/Linear_Regression.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../ML Lab/Linear_Regression.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML Lab/Linear_Regression1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML Lab/P8_Linear_Regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML Lab/P8_Linear_Regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3AZBLKuqBnOZvsmihx1zsYnD5qp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Profiler",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81e2a304-7a3e-4f30-84ba-18716ae94aa4" name="Changes" comment="" />
+      <created>1772790155248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772790155248</updated>
+      <workItem from="1772790156263" duration="292000" />
+      <workItem from="1772790552474" duration="243000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python$main.coverage" NAME="main Coverage Results" MODIFIED="1772790679502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
