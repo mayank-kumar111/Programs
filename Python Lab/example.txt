@@ -1,0 +1,4 @@
+Hello Mayank,
+This is a simple text file.
+It contains plain sentences and no programming symbols.
+Character frequency analysis will show mostly letters, spaces, and punctuation.

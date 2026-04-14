@@ -1,0 +1,3 @@
+Hello Mayank,
+This is a sample text file.
+Enjoy experimenting with file handling!
